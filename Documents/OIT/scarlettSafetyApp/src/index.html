@@ -8,8 +8,13 @@
   </body>
   <script>
   function myFunction() {
+    console.log(new Date().getTime());
+    console.log(new Date().getDate());
+    console.log("Lattitude"+ navigator.geolocation.getCurrentPosition.coords());
+    console.log("Longitude"+ navigator.geolocation.getCurrentPosition.coords());
     window.open("tel:+15678675309");
-  }
+  
+    }
   </script>
 </html>
 
