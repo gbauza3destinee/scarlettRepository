@@ -1,0 +1,130 @@
+# horoscope forecaster 
+## Prompt: enter your first name 
+## Exception Catch: Must be String name 
+## Prompt: enter a birth date
+## Exception: Must be -- / -- / ----
+## Prompt: Would you like to hear 3 qualities for this sign? Y/N
+## Exception: 
+
+
+## Methods: 
+## sayHello : returns None, Saves Name
+## enterBirthDate : returns zodiacName
+## zodiacQualities : returns Three Strings to Describe Zodiac.
+
+def sayHello(): 
+    print('Hello, Please enter your firstName!')
+name = ' '  ## signify a String will be returned
+    name = input()
+
+
+def enterBirthDate():
+    print('Great' + name + ' ,' + 'please enter your birthdate in MM / DD/ YEAR format!')
+    birthdate = None
+    birthdate = input()
+    
+
+    if birthdate.index(0,5) == 03/21 :
+        zodiacName = ' '
+        return zodiacName = 'Aries'
+    
+    elif birthdate.index(0,5) == 04/20 : 
+        return zodiacName = 'Taurus'
+    
+    elif birthdate.index(0,5) == 05/21 :
+        return zodiacName = 'Gemini'
+    
+    elif birthdate.index(0,5) == 06/21 : 
+        return zodiacName = 'Cancer' 
+    
+    elif birthdate.index(0,5) ==  07/23 :
+        return zodiacName = 'Leo' 
+    
+    elif birthdate.index(0,5) == 08/23 : 
+        return zodiacName = 'Virgo'
+    
+    elif birthdate.indexOf(0,5) == 09/23: 
+        return zodiacName = 'Libra'
+    
+    elif birthdate.indexOf(0,5) == 10/23:
+        return zodiacName = 'Scorpio'
+    
+    elif birthdate.indexOf(0,5) == 11/22:
+        return zodiacName = 'Sagitarrius'
+    
+    elif birthdate.indexOf(0,5) == 12/22:
+        return zodiacName = 'Capricorn'
+    
+    elif birthdate.indexOf(0,5) == 01/20: 
+        return zodiacName = 'Aquarius' 
+    
+    elif birthdate.indexOf(0,5) == 02/19:
+        return zodiacName = 'Pisces'
+    
+
+
+
+def zodiacQualities() : 
+    if zodiacName == 'Aries'
+        return print(' Aries' three words are :  ')
+    elif zodiacName == 'Taurus' 
+        return print('Taurus' three words are : ')
+    elif zodiacName == 'Gemini' 
+        return print('Gemini's three words are : ')
+    elif zodiacName == 'Cancer'
+        return print('Cancer's three words are : ')
+    elif zodiacName == 'Leo' 
+        return print('Leo's three words are : ')
+    elif zodiacName == 'Virgo' 
+        return print('Virgo's three words are: ')
+    elif zodiacName == 'Libra' 
+        return print('Libra's three words are: ')
+    elif zodiacName == 'Scorpio'
+        return print('Scorpio's three words are : ')
+    elif zodiacName == 'Sag' 
+        return print('Sag's three words are : ')
+    elif zodiacName == 'Capricorn'
+        return print('Capricorn's three words are: ')
+    elif zodiacName == 'Aquarius'
+        return print('Aquarius' three words are : ')
+    elif zodiacName == 'Pisces' 
+        return print('Pisces' three words are : ')
+    
+
+
+
+try : 
+    sayHello()
+
+except NullPointerException : 
+    print ('Error: Only String Name Allowed!')
+    name = 'friend'
+
+
+try : 
+    enterBirthDate()
+
+except SyntaxError : 
+    print('Error: Invalid BirthDate Format, birthdate must be entered as : MM/DD/ YYYY with no spaces and with the / ')
+
+
+try :
+    zodiacQualities() 
+
+except NoneFound: 
+    print('ZodiacName provided is None or Null. Please re-enter your birthdate with correct syntax!')
+    
+    enterBirthDate();
+
+
+
+
+
+
+
+
+
+
+
+
+
