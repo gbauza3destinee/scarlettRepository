@@ -1,16 +1,13 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import App from "./App";
-// Syntax: import component from path
+<html lang="en">
+  <body>
+    <h2 id="para">Scarlett App </h2>
+    <button onclick="myFunction();">Click Me!</button>
+  </body>
+  <script>
+  function myFunction() {
+    window.open("tel:+15678675309");
+  }
+  </script>
+</html>
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
 
-// The default page when no other page is specified in the url
-// it will come to index page, so this should be the default message.
-
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
