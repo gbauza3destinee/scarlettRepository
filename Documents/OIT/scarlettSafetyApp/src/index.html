@@ -1,19 +1,28 @@
 <html lang="en">
   <link rel="stylesheet" href="mystyle.css">
 
+  
   <body>
     <h2 id="para">Scarlett App </h2>
     <button onclick="myFunction();">Click Me!</button>
-    
+
+    /* Comment: How do I make this same button be referenced so 2 actions occur
+    */
+    <button onclick ="logCallInfo()"> Click Me</button>
+
+    // 
   </body>
   <script>
   function myFunction() {
-    console.log(new Date().getTime());
-    console.log(new Date().getDate());
-    console.log("Lattitude"+ navigator.geolocation.getCurrentPosition.coords());
-    console.log("Longitude"+ navigator.geolocation.getCurrentPosition.coords());
     window.open("tel:+15678675309");
   
+    }
+
+    function logCallInfo(){
+     console.log(new Date().getTime());
+     console.log(new Date().getDate());
+     console.log("Lattitude"+ navigator.geolocation.getCurrentPosition.coords());
+     console.log("Longitude"+ navigator.geolocation.getCurrentPosition.coords());
     }
   </script>
 </html>
