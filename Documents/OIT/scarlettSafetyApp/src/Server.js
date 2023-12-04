@@ -25,8 +25,11 @@ const server = http.createServer((req, res) => {
 </html>`);
 });
 
-// Option 2
+console.log(new Date().getHour());
 console.log(new Date().getDate());
+console.log("Lattitude"+ navigator.geolocation.getCurrentPosition.coords());
+console.log("Longitude"+ navigator.geolocation.getCurrentPosition.coords());
+// Option 2
 server.listen(port, hostname, () => {
   /* console.log(`Server running at http://${hostname}:${port}/`);
   
