@@ -1,10 +1,5 @@
 
-function myFunction() {
-    window.open("tel:+15678675309");
-  }
-
-  /// 1. define function
-
+/// 1. define location
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(logPosition);
@@ -17,6 +12,7 @@ function logPosition(position) {
 }
 
 
+/// 2. Prompt phone 
 function openWindow(){
 window.open("tel:+15678675309");
 getLocation();
