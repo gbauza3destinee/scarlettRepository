@@ -2,4 +2,18 @@ body{
     background-color: black;
     color:yellow;    
     padding-left: 30px;
+
 }
+
+@media screen and (min-width: 400px) {
+   body{
+    align-items: center; 
+    font-size : 3 rem;   
+    /** 1 rem = 16 px
+    **/
+    padding: 1rem 3rem;
+   /** display: flex; **/
+    height: 50 vh;
+   }
+    
+}   
