@@ -2,9 +2,10 @@ body{
     background-color: black;
     color:yellow;    
     padding-left: 30px;
-
-    @media screen and (min-width: 400px) {
-        align-items: center; 
-        font-size: 3rem;
-    }
+    font-size: 4rem;
+    
 }
+ #button{
+    font-size: 2rem;
+    padding: 15px;
+ }
